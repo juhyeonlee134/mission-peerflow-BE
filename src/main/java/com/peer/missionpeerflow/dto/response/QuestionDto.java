@@ -5,7 +5,7 @@ import lombok.*;
 
 @Getter
 @Setter
-public class MainPageQuestionDto {
+public class QuestionDto {
 
     private long questionId;
     private long recommand;
@@ -18,7 +18,7 @@ public class MainPageQuestionDto {
     private String nickname;
 
     @Builder
-    public MainPageQuestionDto(Question question) {
+    public QuestionDto(Question question) {
         this.questionId  = question.getQuestionId();
         this.recommand = question.getRecommend();
         this.view = question.getView();
